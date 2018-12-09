@@ -1,0 +1,89 @@
+/* font-family: "Lato-Hairline" */
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Hairline.ttf");
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* font-family: "Lato-Light" */
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* font-family: "Lato-Regular" */
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* font-family: "Lato-Medium" */
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* font-family: "Lato-Semibold" */
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Semibold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* font-family: "Lato-Bold" */
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* font-family: "Lato-Heavy" */
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Heavy.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* font-family: "Lato-Black" */
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Black.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* font-family: "Lato-Regular-Italic" */
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Italic.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* font-family: "Georgia-Bold" */
+@font-face {
+  font-family: "Georgia";
+  src: url("../fonts/Georgia/georgiabold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* font-family: "Oswald-Medium" */
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/Oswald/Oswald-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* end_fonts */

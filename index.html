@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Заголовок</title>
+<!--
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- styles -->
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="libs/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="libs/owl-carousel2/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<!-- end_styles -->
+</head>
+<body>
+	<div class="body-white-line"></div>
+	<header class="header">
+		<div class="header__top">
+			<div class="container-fluid">
+				<div class="row justify-content-between align-items-center">
+					<div class="col-12">
+						<div class="header__line">
+							<div class="header__h-logo">
+								<a href="/" class="h-logo">
+									<img src="img/logo.svg" alt="logo" class="h-logo__img" />
+								</a>
+							</div>
+							<div class="header__h-info">
+								<p class="h-info">
+									Интренет-магазин<br />специй Mr. Pepper
+								</p>
+							</div>
+							<div class="header__h-phone">
+								<div class="h-phone">
+									<ul class="h-phone__list">
+										<li class="h-phone__item">
+											<a href="tel:+380674323337" class="h-phone__link">
+												+38 (067) 432-33-37
+											</a>
+										</li>
+										<li class="h-phone__item">
+											<a href="tel:+380432659295" class="h-phone__link">
+												+38 (0432) 659-295
+											</a>
+										</li>
+									</ul>
+									<div class="h-phone__time">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 19"><path fill-rule="evenodd" d="M6.052 2.486A7.832 7.832 0 0 1 8 2.24c.659 0 1.298.082 1.909.235-.007-.407-.33-.698-.666-.698H6.718c-.339 0-.664.295-.666.708zm5.635.676V2.49c0-1.347-1.073-2.49-2.444-2.49H6.718c-1.37 0-2.444 1.143-2.444 2.49v.693C1.726 4.563 0 7.312 0 10.453c0 4.512 3.557 8.214 8 8.214s8-3.702 8-8.213c0-3.158-1.743-5.92-4.313-7.292zM8 4.02c-3.412 0-6.222 2.856-6.222 6.435 0 3.579 2.81 6.435 6.222 6.435 3.412 0 6.222-2.856 6.222-6.435 0-3.579-2.81-6.435-6.222-6.435zm-.117 2.745c.491 0 .89.398.89.888v3.135l1.095 2.002a.889.889 0 0 1-1.56.853l-1.313-2.4v-3.59c0-.49.398-.888.888-.888z" clip-rule="evenodd"/></svg>
+									</div>
+								</div>
+							</div>
+							<div class="header__h-search">
+								<form action="">
+									<div class="h-search">
+										<input type="text" class="h-search__input" placeholder="Поиск по сайту">
+										<ipnut type="submit" class="h-search__btn" />
+									</div>
+								</form>
+							</div>
+							<div class="header__h-buttons">
+								<ul class="h-buttons">
+									<li class="h-buttons__item h-buttons__item-tablet">
+										<a href="#" class="h-buttons__link h-buttons__link-search">
+											<svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" fill="none" viewBox="0 0 28 29"><path fill="#606060" d="M27.635 26.891l-7.302-7.237c1.951-2.06 3.21-4.867 3.21-7.987C23.543 5.241 18.255 0 11.772 0 5.287 0 0 5.24 0 11.667s5.288 11.668 11.771 11.668c2.456 0 4.785-.749 6.673-2.06l7.428 7.363c1.133 1.123 2.896-.624 1.763-1.747zM2.455 11.667c0-5.053 4.155-9.171 9.254-9.171 5.099 0 9.253 4.118 9.253 9.171 0 5.054-4.154 9.172-9.253 9.172-5.1 0-9.254-4.118-9.254-9.172z"/></svg>
+										</a>
+									</li>
+									<li class="h-buttons__item">
+										<a href="#" class="h-buttons__link h-buttons__link-profile">
+											<svg xmlns="http://www.w3.org/2000/svg" width="25" height="31" viewBox="0 0 25 31"><path d="M17.694 14.977c1.848-1.602 2.985-3.97 2.985-6.478C20.678 3.83 16.982 0 12.364 0 7.816 0 4.12 3.831 4.12 8.499c0 2.577 1.137 4.946 2.985 6.478C2.842 17.067 0 21.665 0 26.752c0 1.044.142 2.09.355 3.134L.64 31h23.52l.285-1.115c.213-1.045.355-2.09.355-3.134 0-5.086-2.842-9.614-7.106-11.774zm4.122 13.236H2.913c-.07-.487-.07-.975-.07-1.393 0-4.667 2.913-8.708 7.034-9.892a1.87 1.87 0 0 0 .995-1.672c0-.627-.355-1.184-.852-1.532-.143-.07-.285-.14-.356-.21-.142-.07-.497-.348-.497-.348-1.35-1.045-2.203-2.717-2.203-4.597 0-3.135 2.416-5.713 5.4-5.713 2.985 0 5.472 2.578 5.472 5.713 0 1.81-.853 3.552-2.203 4.597 0 0-.355.279-.497.349-.142.07-.213.139-.355.209-.498.348-.853.905-.853 1.532 0 .697.426 1.324.995 1.672 4.121 1.184 7.035 5.225 7.035 9.892 0 .488-.071.906-.142 1.393z"/></svg>
+										</a>
+									</li>
+									<li class="h-buttons__item">
+										<a href="#" class="h-buttons__link h-buttons__link-basket">
+											<svg xmlns="http://www.w3.org/2000/svg" width="35" height="30" viewBox="0 0 35 30"><path d="M34.424 4.004a2.838 2.838 0 0 0-2.226-1.058H8.507c-.16 0-.318 0-.398.076l-.159-.454C7.553 1.133 6.042 0 4.452 0H0v3.022h4.452c.159 0 .398.226.477.302l.954 3.55 2.783 11.482C9.063 19.866 10.494 21 12.164 21h15.582c1.59 0 3.1-1.058 3.577-2.568L34.98 6.27c.08-.756-.079-1.662-.556-2.266zm-6.28 13.672c-.08.151-.319.378-.478.378H12.084c-.159 0-.318-.151-.397-.302L8.904 5.968h22.738l-3.499 11.708zM14.698 22.4a3.497 3.497 0 0 0-3.498 3.5 3.498 3.498 0 1 0 6.996 0c.092-1.934-1.473-3.5-3.498-3.5zM24.5 22.4a3.498 3.498 0 0 0-3.5 3.5c0 1.934 1.566 3.5 3.5 3.5s3.5-1.566 3.5-3.5-1.566-3.5-3.5-3.5z"/></svg>
+										</a>
+									</li>
+									<li class="h-buttons__item h-buttons__item-mob">
+										<a href="#" class="h-buttons__link h-buttons__link-menu">
+											<svg class="no-active" xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="none" viewBox="0 0 16 15"><path fill="#DB3333" d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13a1.5 1.5 0 0 1 0 3h-13A1.5 1.5 0 0 1 0 1.5zM0 7.5A1.5 1.5 0 0 1 1.5 6h13a1.5 1.5 0 0 1 0 3h-13A1.5 1.5 0 0 1 0 7.5zM0 13.5A1.5 1.5 0 0 1 1.5 12h13a1.5 1.5 0 0 1 0 3h-13A1.5 1.5 0 0 1 0 13.5z"/></svg>
+											<svg class="active" xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none" viewBox="0 0 17 16"><path fill="#DB3333" d="M.515.435c.61-.58 1.6-.58 2.21 0L16.038 13.1c.61.58.61 1.52 0 2.101l-.058.055c-.61.58-1.599.58-2.209 0L.458 2.59a1.435 1.435 0 0 1 0-2.101L.515.435z"/><path fill="#DB3333" d="M16.485.435a1.62 1.62 0 0 0-2.21 0L.962 13.1c-.61.58-.61 1.52 0 2.101l.058.055c.61.58 1.599.58 2.209 0L16.543 2.59c.61-.58.61-1.52 0-2.101l-.058-.055z"/></svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__h-mobmenu">
+				<div class="h-mobmenu">
+					<a href="#" class="h-catalog__button">
+						<span>
+							Каталог товаров
+						</span>
+					</a>
+					<div class="h-mobmenu__catalog">
+						<ul class="h-catalog__list">
+							<li class="h-catalog__item">
+								<a href="#" class="h-catalog__link">
+									Специи и пряности
+								</a>
+								<a href="#" class="h-catalog__icon"></a>
+								<ul class="h-catalog__sublist">
+									<li class="h-catalog__subitem">
+										<a href="#" class="h-catalog__sublink">
+											Цельная продукция
+										</a>
+									</li>
+									<li class="h-catalog__subitem">
+										<a href="#" class="h-catalog__sublink">
+											Молотая продукция
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="h-catalog__item">
+								<a href="#" class="h-catalog__link">
+									Сушенные овощи
+								</a>
+							</li>
+							<li class="h-catalog__item">
+								<a href="#" class="h-catalog__link">
+									Пряные травы
+								</a>
+							</li>
+							<li class="h-catalog__item">
+								<a href="#" class="h-catalog__link">
+									Декоративные и вкусовые смеси
+								</a>
+							</li>
+							<li class="h-catalog__item">
+								<a href="#" class="h-catalog__link">
+									Сухие маринады
+								</a>
+							</li>
+							<li class="h-catalog__item">
+								<a href="#" class="h-catalog__link">
+									Смеси специй для кулинарии
+								</a>
+								<a href="#" class="h-catalog__icon"></a>
+								<ul class="h-catalog__sublist">
+									<li class="h-catalog__subitem">
+										<a href="#" class="h-catalog__sublink">
+											Гриль-меню
+										</a>
+									</li>
+									<li class="h-catalog__subitem">
+										<a href="#" class="h-catalog__sublink">
+											Первые блюда
+										</a>
+									</li>
+									<li class="h-catalog__subitem">
+										<a href="#" class="h-catalog__sublink">
+											Вторые блюда
+										</a>
+									</li>
+									<li class="h-catalog__subitem">
+										<a href="#" class="h-catalog__sublink">
+											Универсальные
+										</a>
+									</li>
+									<li class="h-catalog__subitem">
+										<a href="#" class="h-catalog__sublink">
+											Для засолки и консервации
+										</a>
+									</li>
+									<li class="h-catalog__subitem">
+										<a href="#" class="h-catalog__sublink">
+											Панировачные смеси
+										</a>
+									</li>
+									<li class="h-catalog__subitem">
+										<a href="#" class="h-catalog__sublink">
+											Соусы
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="h-catalog__item">
+								<a href="#" class="h-catalog__link">
+									Кулинарные добавки
+								</a>
+							</li>
+							<li class="h-catalog__item">
+								<a href="#" class="h-catalog__link">
+									Морская и пищевая соль
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="h-mobmenu__nav">
+						<ul class="h-nav__list">
+							<li class="h-nav__item">
+								<a href="#" class="h-nav__link">
+									Решения для бизнеса
+								</a>
+							</li>
+							<li class="h-nav__item">
+								<a href="#" class="h-nav__link">
+									Рецепты
+								</a>
+							</li>
+							<li class="h-nav__item">
+								<a href="#" class="h-nav__link">
+									Новинки
+								</a>
+							</li>
+							<li class="h-nav__item">
+								<a href="#" class="h-nav__link">
+									Акции
+								</a>
+							</li>
+							<li class="h-nav__item">
+								<a href="#" class="h-nav__link">
+									Новости
+								</a>
+							</li>
+							<li class="h-nav__item">
+								<a href="#" class="h-nav__link">
+									О компании
+								</a>
+							</li>
+							<li class="h-nav__item">
+								<a href="#" class="h-nav__link">
+									Контакты
+								</a>
+							</li>
+							<li class="h-nav__item">
+								<ul class="h-phone__list">
+									<li class="h-phone__item">
+										<a href="tel:+380674323337" class="h-phone__link">
+											+38 (067) 432-33-37
+										</a>
+									</li>
+									<li class="h-phone__item">
+										<a href="tel:+380432659295" class="h-phone__link">
+											+38 (0432) 659-295
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="h-nav__item">
+								<div class="h-nav__lang">
+									<select name="" id="" class="h-nav__select">
+										<option selected="selected">Рус</option>
+										<option>Eng</option>
+									</select>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<div class="header__h-catalog">
+				<div class="h-catalog">
+					<a href="#" class="h-catalog__button">
+						<span>Каталог товаров</span>
+					</a>
+				</div>
+				<div class="h-catalog__toggle">
+					<ul class="h-catalog__list">
+						<li class="h-catalog__item">
+							<a href="#" class="h-catalog__link">
+								Специи и пряности
+							</a>
+							<a href="#" class="h-catalog__icon"></a>
+							<ul class="h-catalog__sublist">
+								<li class="h-catalog__subitem">
+									<a href="#" class="h-catalog__sublink">
+										Цельная продукция
+									</a>
+								</li>
+								<li class="h-catalog__subitem">
+									<a href="#" class="h-catalog__sublink">
+										Молотая продукция
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="h-catalog__item">
+							<a href="#" class="h-catalog__link">
+								Сушенные овощи
+							</a>
+						</li>
+						<li class="h-catalog__item">
+							<a href="#" class="h-catalog__link">
+								Пряные травы
+							</a>
+						</li>
+						<li class="h-catalog__item">
+							<a href="#" class="h-catalog__link">
+								Декоративные и вкусовые смеси
+							</a>
+						</li>
+						<li class="h-catalog__item">
+							<a href="#" class="h-catalog__link">
+								Сухие маринады
+							</a>
+						</li>
+						<li class="h-catalog__item">
+							<a href="#" class="h-catalog__link">
+								Смеси специй для кулинарии
+							</a>
+							<a href="#" class="h-catalog__icon"></a>
+							<ul class="h-catalog__sublist">
+								<li class="h-catalog__subitem">
+									<a href="#" class="h-catalog__sublink">
+										Гриль-меню
+									</a>
+								</li>
+								<li class="h-catalog__subitem">
+									<a href="#" class="h-catalog__sublink">
+										Первые блюда
+									</a>
+								</li>
+								<li class="h-catalog__subitem">
+									<a href="#" class="h-catalog__sublink">
+										Вторые блюда
+									</a>
+								</li>
+								<li class="h-catalog__subitem">
+									<a href="#" class="h-catalog__sublink">
+										Универсальные
+									</a>
+								</li>
+								<li class="h-catalog__subitem">
+									<a href="#" class="h-catalog__sublink">
+										Для засолки и консервации
+									</a>
+								</li>
+								<li class="h-catalog__subitem">
+									<a href="#" class="h-catalog__sublink">
+										Панировачные смеси
+									</a>
+								</li>
+								<li class="h-catalog__subitem">
+									<a href="#" class="h-catalog__sublink">
+										Соусы
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="h-catalog__item">
+							<a href="#" class="h-catalog__link">
+								Кулинарные добавки
+							</a>
+						</li>
+						<li class="h-catalog__item">
+							<a href="#" class="h-catalog__link">
+								Морская и пищевая соль
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<div class="header__h-nav">
+							<div class="h-nav">
+								<ul class="h-nav__list">
+									<li class="h-nav__item">
+										<a href="#" class="h-nav__link">
+											Решения для бизнеса
+										</a>
+									</li>
+									<li class="h-nav__item">
+										<a href="#" class="h-nav__link">
+											Рецепты
+										</a>
+									</li>
+									<li class="h-nav__item">
+										<a href="#" class="h-nav__link">
+											Новинки
+										</a>
+									</li>
+									<li class="h-nav__item">
+										<a href="#" class="h-nav__link">
+											Акции
+										</a>
+									</li>
+									<li class="h-nav__item">
+										<a href="#" class="h-nav__link">
+											Новости
+										</a>
+									</li>
+									<li class="h-nav__item">
+										<a href="#" class="h-nav__link">
+											О компании
+										</a>
+									</li>
+									<li class="h-nav__item">
+										<a href="#" class="h-nav__link">
+											Контакты
+										</a>
+									</li>
+									<li class="h-nav__item">
+										<div class="h-nav__lang">
+											<select name="" id="" class="h-nav__select">
+												<option selected="selected">Рус</option>
+												<option>Eng</option>
+											</select>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="page page-index">
+		<div class="standart-section">
+			<div class="page__p-indexbanner">
+				<div class="p-indexbanner" style="background-image: url(img/index-banner.png);">
+					<h1 class="p-indexbanner__title">
+						Добро пожаловать<br />в Mr. Pepper!
+					</h1>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-6">
+						<div class="page__p-questions">
+							<div class="p-questions" style="background-image: url(img/questions-bg-1.png);">
+								<h2 class="p-questions__title">
+									Чтобы вы хотели приготовить?
+								</h2>
+								<ul class="p-questions__list">
+									<li class="p-questions__item">
+										<a href="#" class="p-questions__link">
+											Гриль-меню
+										</a>
+									</li>
+									<li class="p-questions__item">
+										<a href="#" class="p-questions__link">
+											Первые блюда
+										</a>
+									</li>
+									<li class="p-questions__item">
+										<a href="#" class="p-questions__link">
+											Вторые блюда
+										</a>
+									</li>
+									<li class="p-questions__item">
+										<a href="#" class="p-questions__link">
+											Соленья и консервация
+										</a>
+									</li>
+									<li class="p-questions__item">
+										<a href="#" class="p-questions__link">
+											Панировка
+										</a>
+									</li>
+									<li class="p-questions__item">
+										<a href="#" class="p-questions__link">
+											Соусы
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="page__p-questions">
+							<div class="p-questions" style="background-image: url(img/questions-bg-2.png);">
+								<h2 class="p-questions__title">
+									Какие специи вы ищете?
+								</h2>
+								<ul class="p-questions__list">
+									<li class="p-questions__item">
+										<a href="#" class="p-questions__link">
+											Специи и пряности
+										</a>
+									</li>
+									<li class="p-questions__item">
+										<a href="#" class="p-questions__link">
+											Сушенные овощи
+										</a>
+									</li>
+									<li class="p-questions__item">
+										<a href="#" class="p-questions__link">
+											Кулинарные добавки
+										</a>
+									</li>
+									<li class="p-questions__item">
+										<a href="#" class="p-questions__link">
+											Сухие маринады
+										</a>
+									</li>
+									<li class="p-questions__item">
+										<a href="#" class="p-questions__link">
+											Пряные травы
+										</a>
+									</li>
+									<li class="p-questions__item">
+										<a href="#" class="p-questions__link">
+											Соль
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12">
+						<div class="page__p-redbaner">
+							<div class="p-redbaner">
+								<div class="p-redbaner__count">
+									1500
+								</div>
+								<p class="p-redbaner__description">
+									Видов специй на любой вкус представлены в нашем магазине. Смотрите каталог!
+								</p>
+								<a href="#" class="p-redbaner__button">
+									Перейти к каталогу
+								</a>
+							</div>
+						</div>
+						<div class="page__p-questions page__p-questions-last">
+							<div class="p-questions p-questions-last" style="background-image: url(img/questions-bg-3.png); background-position: right bottom;">
+								<h2 class="p-questions__title">
+									Решения для бизнеса
+								</h2>
+								<ul class="p-questions__list">
+									<li class="p-questions__item">
+										<a href="#" class="p-questions__link">
+											Производителям
+										</a>
+									</li>
+									<li class="p-questions__item">
+										<a href="#" class="p-questions__link">
+											Хорека
+										</a>
+									</li>
+									<li class="p-questions__item">
+										<a href="#" class="p-questions__link">
+											Ритейл
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="page__p-sectionwrapper">
+							<div class="page__p-sectiontitle">
+								<h2 class="p-sectiontitle">
+									Наши новинки
+								</h2>
+							</div>
+							<div class="page__p-sectionslider">
+								<div class="p-sectionslider p-sectionslider-carousel">
+									<span>Смотреть больше новинок</span>
+									<a href="#" class="p-sectionslider__arrow p-sectionslider__prev"></a>
+									<a href="#" class="p-sectionslider__arrow p-sectionslider__next"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="standart-section">
+			<img src="img/bg-index-gray.jpg" alt="alt" class="standart-section__img">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="page__p-carousel">
+							<div class="p-carousel owl-carousel">
+								<div class="p-carousel__item">
+									<div class="p-prodelement">
+										<div class="p-prodelement__block">
+											<span class="p-prodelement__new">
+												New
+											</span>
+										</div>
+										<a href="#" class="p-prodelement__fav">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16"><path stroke="#1C1C1C" stroke-miterlimit="10" stroke-width="2" d="M15.712 8.642c-2.021 2.01-4.042 4.059-6.1 6.07-.367.365-.771.402-1.139 0-2.057-2.048-4.115-4.06-6.136-6.107C.353 6.594.61 3.485 2.888 1.84 4.505.67 6.893.78 8.363 2.133c.22.183.404.402.625.585.33-.293.624-.585.955-.841C11.34.889 12.81.743 14.353 1.4c1.58.695 2.498 1.975 2.608 3.73.184 1.353-.294 2.523-1.25 3.51z"/></svg>
+										</a>
+										<div class="p-prodelement__top">
+											<img src="img/prods/1.png" alt="alt" class="p-prodelement__img">
+										</div>
+										<span class="p-prodelement__tag">
+											Для мяса, овощи и травы
+										</span>
+										<p class="p-prodelement__description">
+											Грузинская приправа для мяса из натуральны трав хмели-сунели
+										</p>
+										<div class="p-prodelement__bottom">
+											<div class="p-prodelement__price">
+												<b>25,50 грн.</b> за 50 г
+											</div>
+											<a href="#" class="p-prodelement__basket">
+												<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none" viewBox="0 0 21 18"><path fill="#1C1C1C" d="M20.654 2.478a1.683 1.683 0 0 0-1.335-.654H5.104c-.095 0-.19 0-.239.046l-.095-.28C4.532.7 3.625 0 2.671 0H0v1.87h2.671c.096 0 .239.14.286.188l.573 2.197 1.67 7.108A2.183 2.183 0 0 0 7.297 13h9.35c.954 0 1.86-.655 2.146-1.59l2.194-7.529c.048-.467-.047-1.028-.334-1.403zm-3.768 8.464c-.048.094-.19.234-.286.234H7.25c-.095 0-.19-.093-.238-.187l-1.67-7.295h13.643l-2.099 7.248zM8.999 14A1.999 1.999 0 0 0 7 16a1.999 1.999 0 1 0 3.998 0c.052-1.105-.842-2-2-2zM15 14a2 2 0 1 0 0 4 2 2 0 1 0 0-4z"/></svg>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="p-carousel__item">
+									<div class="p-prodelement">
+										<div class="p-prodelement__block">
+											<span class="p-prodelement__new">
+												New
+											</span>
+										</div>
+										<a href="#" class="p-prodelement__fav">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16"><path stroke="#1C1C1C" stroke-miterlimit="10" stroke-width="2" d="M15.712 8.642c-2.021 2.01-4.042 4.059-6.1 6.07-.367.365-.771.402-1.139 0-2.057-2.048-4.115-4.06-6.136-6.107C.353 6.594.61 3.485 2.888 1.84 4.505.67 6.893.78 8.363 2.133c.22.183.404.402.625.585.33-.293.624-.585.955-.841C11.34.889 12.81.743 14.353 1.4c1.58.695 2.498 1.975 2.608 3.73.184 1.353-.294 2.523-1.25 3.51z"/></svg>
+										</a>
+										<div class="p-prodelement__top">
+											<img src="img/prods/2.png" alt="alt" class="p-prodelement__img">
+										</div>
+										<span class="p-prodelement__tag">
+											Овощи и травы
+										</span>
+										<p class="p-prodelement__description">
+											Чаванпраш от «Патанджали», обогащенный шафраном
+										</p>
+										<div class="p-prodelement__bottom">
+											<div class="p-prodelement__price">
+												<b>130,00 грн.</b> за 50 г
+											</div>
+											<a href="#" class="p-prodelement__basket">
+												<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none" viewBox="0 0 21 18"><path fill="#1C1C1C" d="M20.654 2.478a1.683 1.683 0 0 0-1.335-.654H5.104c-.095 0-.19 0-.239.046l-.095-.28C4.532.7 3.625 0 2.671 0H0v1.87h2.671c.096 0 .239.14.286.188l.573 2.197 1.67 7.108A2.183 2.183 0 0 0 7.297 13h9.35c.954 0 1.86-.655 2.146-1.59l2.194-7.529c.048-.467-.047-1.028-.334-1.403zm-3.768 8.464c-.048.094-.19.234-.286.234H7.25c-.095 0-.19-.093-.238-.187l-1.67-7.295h13.643l-2.099 7.248zM8.999 14A1.999 1.999 0 0 0 7 16a1.999 1.999 0 1 0 3.998 0c.052-1.105-.842-2-2-2zM15 14a2 2 0 1 0 0 4 2 2 0 1 0 0-4z"/></svg>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="p-carousel__item">
+									<div class="p-prodelement">
+										<div class="p-prodelement__block">
+											<span class="p-prodelement__new">
+												New
+											</span>
+										</div>
+										<a href="#" class="p-prodelement__fav">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16"><path stroke="#1C1C1C" stroke-miterlimit="10" stroke-width="2" d="M15.712 8.642c-2.021 2.01-4.042 4.059-6.1 6.07-.367.365-.771.402-1.139 0-2.057-2.048-4.115-4.06-6.136-6.107C.353 6.594.61 3.485 2.888 1.84 4.505.67 6.893.78 8.363 2.133c.22.183.404.402.625.585.33-.293.624-.585.955-.841C11.34.889 12.81.743 14.353 1.4c1.58.695 2.498 1.975 2.608 3.73.184 1.353-.294 2.523-1.25 3.51z"/></svg>
+										</a>
+										<div class="p-prodelement__top">
+											<img src="img/prods/3.png" alt="alt" class="p-prodelement__img">
+										</div>
+										<span class="p-prodelement__tag">
+											Для плова
+										</span>
+										<p class="p-prodelement__description">
+											Приправа с узбекскими пряностями
+										</p>
+										<div class="p-prodelement__bottom">
+											<div class="p-prodelement__price">
+												<b>25,50 грн.</b> за 50 г
+											</div>
+											<a href="#" class="p-prodelement__basket">
+												<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none" viewBox="0 0 21 18"><path fill="#1C1C1C" d="M20.654 2.478a1.683 1.683 0 0 0-1.335-.654H5.104c-.095 0-.19 0-.239.046l-.095-.28C4.532.7 3.625 0 2.671 0H0v1.87h2.671c.096 0 .239.14.286.188l.573 2.197 1.67 7.108A2.183 2.183 0 0 0 7.297 13h9.35c.954 0 1.86-.655 2.146-1.59l2.194-7.529c.048-.467-.047-1.028-.334-1.403zm-3.768 8.464c-.048.094-.19.234-.286.234H7.25c-.095 0-.19-.093-.238-.187l-1.67-7.295h13.643l-2.099 7.248zM8.999 14A1.999 1.999 0 0 0 7 16a1.999 1.999 0 1 0 3.998 0c.052-1.105-.842-2-2-2zM15 14a2 2 0 1 0 0 4 2 2 0 1 0 0-4z"/></svg>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="p-carousel__item">
+									<div class="p-prodelement">
+										<div class="p-prodelement__block">
+											<span class="p-prodelement__new">
+												New
+											</span>
+										</div>
+										<a href="#" class="p-prodelement__fav">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16"><path stroke="#1C1C1C" stroke-miterlimit="10" stroke-width="2" d="M15.712 8.642c-2.021 2.01-4.042 4.059-6.1 6.07-.367.365-.771.402-1.139 0-2.057-2.048-4.115-4.06-6.136-6.107C.353 6.594.61 3.485 2.888 1.84 4.505.67 6.893.78 8.363 2.133c.22.183.404.402.625.585.33-.293.624-.585.955-.841C11.34.889 12.81.743 14.353 1.4c1.58.695 2.498 1.975 2.608 3.73.184 1.353-.294 2.523-1.25 3.51z"/></svg>
+										</a>
+										<div class="p-prodelement__top">
+											<img src="img/prods/4.png" alt="alt" class="p-prodelement__img">
+										</div>
+										<span class="p-prodelement__tag">
+											Уневерсальные, чили
+										</span>
+										<p class="p-prodelement__description">
+											Сушенный перец чили Meira средней остроты
+										</p>
+										<div class="p-prodelement__bottom">
+											<div class="p-prodelement__price">
+												<b>50 грн.</b> за 50 г
+											</div>
+											<a href="#" class="p-prodelement__basket">
+												<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none" viewBox="0 0 21 18"><path fill="#1C1C1C" d="M20.654 2.478a1.683 1.683 0 0 0-1.335-.654H5.104c-.095 0-.19 0-.239.046l-.095-.28C4.532.7 3.625 0 2.671 0H0v1.87h2.671c.096 0 .239.14.286.188l.573 2.197 1.67 7.108A2.183 2.183 0 0 0 7.297 13h9.35c.954 0 1.86-.655 2.146-1.59l2.194-7.529c.048-.467-.047-1.028-.334-1.403zm-3.768 8.464c-.048.094-.19.234-.286.234H7.25c-.095 0-.19-.093-.238-.187l-1.67-7.295h13.643l-2.099 7.248zM8.999 14A1.999 1.999 0 0 0 7 16a1.999 1.999 0 1 0 3.998 0c.052-1.105-.842-2-2-2zM15 14a2 2 0 1 0 0 4 2 2 0 1 0 0-4z"/></svg>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="p-carousel__item">
+									<div class="p-prodelement">
+										<div class="p-prodelement__block">
+											<span class="p-prodelement__new">
+												New
+											</span>
+										</div>
+										<a href="#" class="p-prodelement__fav">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16"><path stroke="#1C1C1C" stroke-miterlimit="10" stroke-width="2" d="M15.712 8.642c-2.021 2.01-4.042 4.059-6.1 6.07-.367.365-.771.402-1.139 0-2.057-2.048-4.115-4.06-6.136-6.107C.353 6.594.61 3.485 2.888 1.84 4.505.67 6.893.78 8.363 2.133c.22.183.404.402.625.585.33-.293.624-.585.955-.841C11.34.889 12.81.743 14.353 1.4c1.58.695 2.498 1.975 2.608 3.73.184 1.353-.294 2.523-1.25 3.51z"/></svg>
+										</a>
+										<div class="p-prodelement__top">
+											<img src="img/prods/1.png" alt="alt" class="p-prodelement__img">
+										</div>
+										<span class="p-prodelement__tag">
+											Для мяса, овощи и травы
+										</span>
+										<p class="p-prodelement__description">
+											Грузинская приправа для мяса из натуральны трав хмели-сунели
+										</p>
+										<div class="p-prodelement__bottom">
+											<div class="p-prodelement__price">
+												<b>50 грн.</b> за 100 г
+											</div>
+											<a href="#" class="p-prodelement__basket">
+												<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none" viewBox="0 0 21 18"><path fill="#1C1C1C" d="M20.654 2.478a1.683 1.683 0 0 0-1.335-.654H5.104c-.095 0-.19 0-.239.046l-.095-.28C4.532.7 3.625 0 2.671 0H0v1.87h2.671c.096 0 .239.14.286.188l.573 2.197 1.67 7.108A2.183 2.183 0 0 0 7.297 13h9.35c.954 0 1.86-.655 2.146-1.59l2.194-7.529c.048-.467-.047-1.028-.334-1.403zm-3.768 8.464c-.048.094-.19.234-.286.234H7.25c-.095 0-.19-.093-.238-.187l-1.67-7.295h13.643l-2.099 7.248zM8.999 14A1.999 1.999 0 0 0 7 16a1.999 1.999 0 1 0 3.998 0c.052-1.105-.842-2-2-2zM15 14a2 2 0 1 0 0 4 2 2 0 1 0 0-4z"/></svg>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="standart-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="page__p-neededhelp">
+							<div class="p-neededhelp">
+								<div class="row">
+									<div class="col-lg-5 align-self-end">
+										<div class="p-neededhelp__left">
+											<h3 class="p-neededhelp__title">
+												Нужна помощь с выбором?
+											</h3>
+											<p class="p-neededhelp__description">
+												Оставьте свой номер телефона и мы перезвоним вам в ближайшее время
+											</p>
+										</div>
+									</div>
+									<div class="col-lg-7 align-self-end">
+										<div class="p-neededhelp__right">
+											<form action="">
+												<div class="p-neededhelp__form">
+													<input type="text" class="p-neededhelp__input" placeholder="+38 (0 _ _ ) _ _ _-_ _-_ _">
+													<input type="submit" class="p-neededhelp__button" value="Отправить">
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="page__p-sectionwrapper">
+							<div class="page__p-sectiontitle">
+								<h2 class="p-sectiontitle">
+									Акционные предложения
+								</h2>
+							</div>
+							<div class="page__p-sectionslider">
+								<div class="p-sectionslider p-sectionslider-carousel1">
+									<span>Все акции</span>
+									<a href="#" class="p-sectionslider__arrow p-sectionslider__prev"></a>
+									<a href="#" class="p-sectionslider__arrow p-sectionslider__next"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="page__p-carousel">
+							<div class="p-carousel1 owl-carousel">
+								<div class="p-carousel__item">
+									<div class="p-prodelement">
+										<div class="p-prodelement__block">
+											<span class="p-prodelement__stock">
+												Акция <span>-5%</span>
+											</span>
+										</div>
+										<a href="#" class="p-prodelement__fav">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16"><path stroke="#1C1C1C" stroke-miterlimit="10" stroke-width="2" d="M15.712 8.642c-2.021 2.01-4.042 4.059-6.1 6.07-.367.365-.771.402-1.139 0-2.057-2.048-4.115-4.06-6.136-6.107C.353 6.594.61 3.485 2.888 1.84 4.505.67 6.893.78 8.363 2.133c.22.183.404.402.625.585.33-.293.624-.585.955-.841C11.34.889 12.81.743 14.353 1.4c1.58.695 2.498 1.975 2.608 3.73.184 1.353-.294 2.523-1.25 3.51z"/></svg>
+										</a>
+										<div class="p-prodelement__top">
+											<img src="img/prods/5.png" alt="alt" class="p-prodelement__img">
+										</div>
+										<span class="p-prodelement__tag">
+											Для мяса
+										</span>
+										<p class="p-prodelement__description">
+											Индийская смесь специй  для мяса Kohinoor
+										</p>
+										<div class="p-prodelement__bottom">
+											<div class="p-prodelement__price">
+												<span class="p-prodelement__oldprice">
+													<span>100 грн.</span>
+												</span>
+												<b>92 грн.</b> за 50 г
+											</div>
+											<a href="#" class="p-prodelement__basket">
+												<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none" viewBox="0 0 21 18"><path fill="#1C1C1C" d="M20.654 2.478a1.683 1.683 0 0 0-1.335-.654H5.104c-.095 0-.19 0-.239.046l-.095-.28C4.532.7 3.625 0 2.671 0H0v1.87h2.671c.096 0 .239.14.286.188l.573 2.197 1.67 7.108A2.183 2.183 0 0 0 7.297 13h9.35c.954 0 1.86-.655 2.146-1.59l2.194-7.529c.048-.467-.047-1.028-.334-1.403zm-3.768 8.464c-.048.094-.19.234-.286.234H7.25c-.095 0-.19-.093-.238-.187l-1.67-7.295h13.643l-2.099 7.248zM8.999 14A1.999 1.999 0 0 0 7 16a1.999 1.999 0 1 0 3.998 0c.052-1.105-.842-2-2-2zM15 14a2 2 0 1 0 0 4 2 2 0 1 0 0-4z"/></svg>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="p-carousel__item">
+									<div class="p-prodelement">
+										<div class="p-prodelement__block">
+											<span class="p-prodelement__stock">
+												Акция <span>-5%</span>
+											</span>
+										</div>
+										<a href="#" class="p-prodelement__fav">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16"><path stroke="#1C1C1C" stroke-miterlimit="10" stroke-width="2" d="M15.712 8.642c-2.021 2.01-4.042 4.059-6.1 6.07-.367.365-.771.402-1.139 0-2.057-2.048-4.115-4.06-6.136-6.107C.353 6.594.61 3.485 2.888 1.84 4.505.67 6.893.78 8.363 2.133c.22.183.404.402.625.585.33-.293.624-.585.955-.841C11.34.889 12.81.743 14.353 1.4c1.58.695 2.498 1.975 2.608 3.73.184 1.353-.294 2.523-1.25 3.51z"/></svg>
+										</a>
+										<div class="p-prodelement__top">
+											<img src="img/prods/6.png" alt="alt" class="p-prodelement__img">
+										</div>
+										<span class="p-prodelement__tag">
+											Для мяса, Для курицы
+										</span>
+										<p class="p-prodelement__description">
+											Идеальная смесь для маринования курицы
+										</p>
+										<div class="p-prodelement__bottom">
+											<div class="p-prodelement__price">
+												<span class="p-prodelement__oldprice">
+													<span>100 грн.</span>
+												</span>
+												<b>92 грн.</b> за 50 г
+											</div>
+											<a href="#" class="p-prodelement__basket">
+												<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none" viewBox="0 0 21 18"><path fill="#1C1C1C" d="M20.654 2.478a1.683 1.683 0 0 0-1.335-.654H5.104c-.095 0-.19 0-.239.046l-.095-.28C4.532.7 3.625 0 2.671 0H0v1.87h2.671c.096 0 .239.14.286.188l.573 2.197 1.67 7.108A2.183 2.183 0 0 0 7.297 13h9.35c.954 0 1.86-.655 2.146-1.59l2.194-7.529c.048-.467-.047-1.028-.334-1.403zm-3.768 8.464c-.048.094-.19.234-.286.234H7.25c-.095 0-.19-.093-.238-.187l-1.67-7.295h13.643l-2.099 7.248zM8.999 14A1.999 1.999 0 0 0 7 16a1.999 1.999 0 1 0 3.998 0c.052-1.105-.842-2-2-2zM15 14a2 2 0 1 0 0 4 2 2 0 1 0 0-4z"/></svg>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="p-carousel__item">
+									<div class="p-prodelement">
+										<div class="p-prodelement__block">
+											<span class="p-prodelement__stock">
+												Акция <span>-5%</span>
+											</span>
+										</div>
+										<a href="#" class="p-prodelement__fav">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16"><path stroke="#1C1C1C" stroke-miterlimit="10" stroke-width="2" d="M15.712 8.642c-2.021 2.01-4.042 4.059-6.1 6.07-.367.365-.771.402-1.139 0-2.057-2.048-4.115-4.06-6.136-6.107C.353 6.594.61 3.485 2.888 1.84 4.505.67 6.893.78 8.363 2.133c.22.183.404.402.625.585.33-.293.624-.585.955-.841C11.34.889 12.81.743 14.353 1.4c1.58.695 2.498 1.975 2.608 3.73.184 1.353-.294 2.523-1.25 3.51z"/></svg>
+										</a>
+										<div class="p-prodelement__top">
+											<img src="img/prods/7.png" alt="alt" class="p-prodelement__img">
+										</div>
+										<span class="p-prodelement__tag">
+											Универсальнве, Овощи и травы
+										</span>
+										<p class="p-prodelement__description">
+											Универсальная приправа  из душистых трав и свежей зелени
+										</p>
+										<div class="p-prodelement__bottom">
+											<div class="p-prodelement__price">
+												<span class="p-prodelement__oldprice">
+													<span>100 грн.</span>
+												</span>
+												<b>92 грн.</b> за 50 г
+											</div>
+											<a href="#" class="p-prodelement__basket">
+												<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none" viewBox="0 0 21 18"><path fill="#1C1C1C" d="M20.654 2.478a1.683 1.683 0 0 0-1.335-.654H5.104c-.095 0-.19 0-.239.046l-.095-.28C4.532.7 3.625 0 2.671 0H0v1.87h2.671c.096 0 .239.14.286.188l.573 2.197 1.67 7.108A2.183 2.183 0 0 0 7.297 13h9.35c.954 0 1.86-.655 2.146-1.59l2.194-7.529c.048-.467-.047-1.028-.334-1.403zm-3.768 8.464c-.048.094-.19.234-.286.234H7.25c-.095 0-.19-.093-.238-.187l-1.67-7.295h13.643l-2.099 7.248zM8.999 14A1.999 1.999 0 0 0 7 16a1.999 1.999 0 1 0 3.998 0c.052-1.105-.842-2-2-2zM15 14a2 2 0 1 0 0 4 2 2 0 1 0 0-4z"/></svg>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="p-carousel__item">
+									<div class="p-prodelement">
+										<div class="p-prodelement__block">
+											<span class="p-prodelement__stock">
+												Акция <span>-5%</span>
+											</span>
+										</div>
+										<a href="#" class="p-prodelement__fav">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16"><path stroke="#1C1C1C" stroke-miterlimit="10" stroke-width="2" d="M15.712 8.642c-2.021 2.01-4.042 4.059-6.1 6.07-.367.365-.771.402-1.139 0-2.057-2.048-4.115-4.06-6.136-6.107C.353 6.594.61 3.485 2.888 1.84 4.505.67 6.893.78 8.363 2.133c.22.183.404.402.625.585.33-.293.624-.585.955-.841C11.34.889 12.81.743 14.353 1.4c1.58.695 2.498 1.975 2.608 3.73.184 1.353-.294 2.523-1.25 3.51z"/></svg>
+										</a>
+										<div class="p-prodelement__top">
+											<img src="img/prods/8.png" alt="alt" class="p-prodelement__img">
+										</div>
+										<span class="p-prodelement__tag">
+											Универсальнве
+										</span>
+										<p class="p-prodelement__description">
+											Пряный карри подойдет к мясу, плову придаст особый вкус и цвет
+										</p>
+										<div class="p-prodelement__bottom">
+											<div class="p-prodelement__price">
+												<span class="p-prodelement__oldprice">
+													<span>100 грн.</span>
+												</span>
+												<b>92 грн.</b> за 50 г
+											</div>
+											<a href="#" class="p-prodelement__basket">
+												<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none" viewBox="0 0 21 18"><path fill="#1C1C1C" d="M20.654 2.478a1.683 1.683 0 0 0-1.335-.654H5.104c-.095 0-.19 0-.239.046l-.095-.28C4.532.7 3.625 0 2.671 0H0v1.87h2.671c.096 0 .239.14.286.188l.573 2.197 1.67 7.108A2.183 2.183 0 0 0 7.297 13h9.35c.954 0 1.86-.655 2.146-1.59l2.194-7.529c.048-.467-.047-1.028-.334-1.403zm-3.768 8.464c-.048.094-.19.234-.286.234H7.25c-.095 0-.19-.093-.238-.187l-1.67-7.295h13.643l-2.099 7.248zM8.999 14A1.999 1.999 0 0 0 7 16a1.999 1.999 0 1 0 3.998 0c.052-1.105-.842-2-2-2zM15 14a2 2 0 1 0 0 4 2 2 0 1 0 0-4z"/></svg>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="white-section">
+			<img class="white-section__img" src="img/bg-index-white.png" alt="alt">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="page__p-sectionwrapper">
+							<div class="page__p-sectiontitle">
+								<h2 class="p-sectiontitle">
+									Новые рецепты
+								</h2>
+							</div>
+							<div class="page__p-sectioninfo">
+								<div class="p-sectioninfo">
+									<span class="p-sectioninfo__count">
+										350
+									</span>
+									<p class="p-sectioninfo__description">
+										Рецептов от лучших<br />поваров на любой вкус
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row visible-md">
+					<div class="col-12">
+						<div class="p-carousel3 owl-carousel">
+							<div class="p-carousel__item">
+								<div class="p-recipes">
+									<div class="p-recipes__top" style="background-image: url(img/recipes/1.png);"></div>
+									<p class="p-recipes__description">
+										Рецепт для приготовления очень сочного мяса с применением сушенного помидора и грузинских специй 
+									</p>
+									<a href="#" class="p-recipes__set">
+										Специи в наборе
+									</a>
+									<div class="p-recipes__bottom">
+										<span class="p-recipes__price">
+											160,00 грн.
+										</span>
+										<a href="#" class="p-recipes__btn">
+											<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none" viewBox="0 0 21 18"><path fill="#FFFFFF" d="M20.654 2.478a1.683 1.683 0 0 0-1.335-.654H5.104c-.095 0-.19 0-.239.046l-.095-.28C4.532.7 3.625 0 2.671 0H0v1.87h2.671c.096 0 .239.14.286.188l.573 2.197 1.67 7.108A2.183 2.183 0 0 0 7.297 13h9.35c.954 0 1.86-.655 2.146-1.59l2.194-7.529c.048-.467-.047-1.028-.334-1.403zm-3.768 8.464c-.048.094-.19.234-.286.234H7.25c-.095 0-.19-.093-.238-.187l-1.67-7.295h13.643l-2.099 7.248zM8.999 14A1.999 1.999 0 0 0 7 16a1.999 1.999 0 1 0 3.998 0c.052-1.105-.842-2-2-2zM15 14a2 2 0 1 0 0 4 2 2 0 1 0 0-4z"/></svg>
+											Купить набор
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="p-carousel__item">
+								<div class="p-recipes">
+									<div class="p-recipes__top" style="background-image: url(img/recipes/2.png);"></div>
+									<p class="p-recipes__description">
+										Запеченное мясо с картофелем и пряными травами: розмарин, шафран, прованские травы
+									</p>
+									<a href="#" class="p-recipes__set">
+										Специи в наборе
+									</a>
+									<div class="p-recipes__bottom">
+										<span class="p-recipes__price">
+											450,00 грн.
+										</span>
+										<a href="#" class="p-recipes__btn">
+											<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none" viewBox="0 0 21 18"><path fill="#FFFFFF" d="M20.654 2.478a1.683 1.683 0 0 0-1.335-.654H5.104c-.095 0-.19 0-.239.046l-.095-.28C4.532.7 3.625 0 2.671 0H0v1.87h2.671c.096 0 .239.14.286.188l.573 2.197 1.67 7.108A2.183 2.183 0 0 0 7.297 13h9.35c.954 0 1.86-.655 2.146-1.59l2.194-7.529c.048-.467-.047-1.028-.334-1.403zm-3.768 8.464c-.048.094-.19.234-.286.234H7.25c-.095 0-.19-.093-.238-.187l-1.67-7.295h13.643l-2.099 7.248zM8.999 14A1.999 1.999 0 0 0 7 16a1.999 1.999 0 1 0 3.998 0c.052-1.105-.842-2-2-2zM15 14a2 2 0 1 0 0 4 2 2 0 1 0 0-4z"/></svg>
+											Купить набор
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="p-carousel__item">
+								<div class="p-recipes">
+									<div class="p-recipes__top" style="background-image: url(img/recipes/3.png);"></div>
+									<p class="p-recipes__description">
+										Листовое печенье с набором ароматных пряностей: корица, имбирь, изюм и много других специй для уютных осенних вечеров
+									</p>
+									<a href="#" class="p-recipes__set">
+										Специи в наборе
+									</a>
+									<div class="p-recipes__bottom">
+										<span class="p-recipes__price">
+											160,00 грн.
+										</span>
+										<a href="#" class="p-recipes__btn">
+											<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none" viewBox="0 0 21 18"><path fill="#FFFFFF" d="M20.654 2.478a1.683 1.683 0 0 0-1.335-.654H5.104c-.095 0-.19 0-.239.046l-.095-.28C4.532.7 3.625 0 2.671 0H0v1.87h2.671c.096 0 .239.14.286.188l.573 2.197 1.67 7.108A2.183 2.183 0 0 0 7.297 13h9.35c.954 0 1.86-.655 2.146-1.59l2.194-7.529c.048-.467-.047-1.028-.334-1.403zm-3.768 8.464c-.048.094-.19.234-.286.234H7.25c-.095 0-.19-.093-.238-.187l-1.67-7.295h13.643l-2.099 7.248zM8.999 14A1.999 1.999 0 0 0 7 16a1.999 1.999 0 1 0 3.998 0c.052-1.105-.842-2-2-2zM15 14a2 2 0 1 0 0 4 2 2 0 1 0 0-4z"/></svg>
+											Купить набор
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row hidden-md">
+					<div class="col-lg-4">
+						<div class="page__p-recipes">
+							<div class="p-recipes">
+								<div class="p-recipes__top" style="background-image: url(img/recipes/1.png);"></div>
+								<p class="p-recipes__description">
+									Рецепт для приготовления очень сочного мяса с применением сушенного помидора и грузинских специй 
+								</p>
+								<a href="#" class="p-recipes__set">
+									Специи в наборе
+								</a>
+								<div class="p-recipes__bottom">
+									<span class="p-recipes__price">
+										160,00 грн.
+									</span>
+									<a href="#" class="p-recipes__btn">
+										<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none" viewBox="0 0 21 18"><path fill="#FFFFFF" d="M20.654 2.478a1.683 1.683 0 0 0-1.335-.654H5.104c-.095 0-.19 0-.239.046l-.095-.28C4.532.7 3.625 0 2.671 0H0v1.87h2.671c.096 0 .239.14.286.188l.573 2.197 1.67 7.108A2.183 2.183 0 0 0 7.297 13h9.35c.954 0 1.86-.655 2.146-1.59l2.194-7.529c.048-.467-.047-1.028-.334-1.403zm-3.768 8.464c-.048.094-.19.234-.286.234H7.25c-.095 0-.19-.093-.238-.187l-1.67-7.295h13.643l-2.099 7.248zM8.999 14A1.999 1.999 0 0 0 7 16a1.999 1.999 0 1 0 3.998 0c.052-1.105-.842-2-2-2zM15 14a2 2 0 1 0 0 4 2 2 0 1 0 0-4z"/></svg>
+										Купить набор
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="page__p-recipes">
+							<div class="p-recipes">
+								<div class="p-recipes__top" style="background-image: url(img/recipes/2.png);"></div>
+								<p class="p-recipes__description">
+									Запеченное мясо с картофелем и пряными травами: розмарин, шафран, прованские травы
+								</p>
+								<a href="#" class="p-recipes__set">
+									Специи в наборе
+								</a>
+								<div class="p-recipes__bottom">
+									<span class="p-recipes__price">
+										450,00 грн.
+									</span>
+									<a href="#" class="p-recipes__btn">
+										<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none" viewBox="0 0 21 18"><path fill="#FFFFFF" d="M20.654 2.478a1.683 1.683 0 0 0-1.335-.654H5.104c-.095 0-.19 0-.239.046l-.095-.28C4.532.7 3.625 0 2.671 0H0v1.87h2.671c.096 0 .239.14.286.188l.573 2.197 1.67 7.108A2.183 2.183 0 0 0 7.297 13h9.35c.954 0 1.86-.655 2.146-1.59l2.194-7.529c.048-.467-.047-1.028-.334-1.403zm-3.768 8.464c-.048.094-.19.234-.286.234H7.25c-.095 0-.19-.093-.238-.187l-1.67-7.295h13.643l-2.099 7.248zM8.999 14A1.999 1.999 0 0 0 7 16a1.999 1.999 0 1 0 3.998 0c.052-1.105-.842-2-2-2zM15 14a2 2 0 1 0 0 4 2 2 0 1 0 0-4z"/></svg>
+										Купить набор
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="page__p-recipes">
+							<div class="p-recipes">
+								<div class="p-recipes__top" style="background-image: url(img/recipes/3.png);"></div>
+								<p class="p-recipes__description">
+									Листовое печенье с набором ароматных пряностей: корица, имбирь, изюм и много других специй для уютных осенних вечеров
+								</p>
+								<a href="#" class="p-recipes__set">
+									Специи в наборе
+								</a>
+								<div class="p-recipes__bottom">
+									<span class="p-recipes__price">
+										160,00 грн.
+									</span>
+									<a href="#" class="p-recipes__btn">
+										<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none" viewBox="0 0 21 18"><path fill="#FFFFFF" d="M20.654 2.478a1.683 1.683 0 0 0-1.335-.654H5.104c-.095 0-.19 0-.239.046l-.095-.28C4.532.7 3.625 0 2.671 0H0v1.87h2.671c.096 0 .239.14.286.188l.573 2.197 1.67 7.108A2.183 2.183 0 0 0 7.297 13h9.35c.954 0 1.86-.655 2.146-1.59l2.194-7.529c.048-.467-.047-1.028-.334-1.403zm-3.768 8.464c-.048.094-.19.234-.286.234H7.25c-.095 0-.19-.093-.238-.187l-1.67-7.295h13.643l-2.099 7.248zM8.999 14A1.999 1.999 0 0 0 7 16a1.999 1.999 0 1 0 3.998 0c.052-1.105-.842-2-2-2zM15 14a2 2 0 1 0 0 4 2 2 0 1 0 0-4z"/></svg>
+										Купить набор
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="standart-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="page__p-sectionwrapper">
+							<div class="page__p-sectiontitle">
+								<h2 class="p-sectiontitle">
+									Новости
+								</h2>
+							</div>
+							<div class="page__p-sectionslider">
+								<div class="p-sectionslider p-sectionslider-carousel2">
+									<span>Больше новостей</span>
+									<a href="#" class="p-sectionslider__arrow p-sectionslider__prev"></a>
+									<a href="#" class="p-sectionslider__arrow p-sectionslider__next"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="page__p-carousel">
+							<div class="p-carousel2 owl-carousel">
+								<div class="p-carousel__item">
+									<div class="p-recipes p-news">
+										<div class="p-recipes__top" style="background-image: url(img/news/1.png);"></div>
+										<div class="p-news__wrapper">
+											<div class="p-news__data">
+												10 сентября 2018
+											</div>
+											<p class="p-recipes__description">
+												Как правильно подбирать специи  для своих блюд: советы шеф-повара
+											</p>
+											<div class="p-recipes__bottom">
+												<a href="#" class="p-news__detal">
+													Читать новость
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="p-carousel__item">
+									<div class="p-recipes p-news">
+										<div class="p-recipes__top" style="background-image: url(img/news/2.png);"></div>
+										<div class="p-news__wrapper">
+											<div class="p-news__data">
+												10 сентября 2018
+											</div>
+											<p class="p-recipes__description">
+												Специи для вкусного кофе: какие специи
+											</p>
+											<div class="p-recipes__bottom">
+												<a href="#" class="p-news__detal">
+													Читать новость
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="p-carousel__item">
+									<div class="p-recipes p-news">
+										<div class="p-recipes__top" style="background-image: url(img/news/3.png);"></div>
+										<div class="p-news__wrapper">
+											<div class="p-news__data">
+												10 сентября 2018
+											</div>
+											<p class="p-recipes__description">
+												Как правильно подбирать специи  для своих блюд: советы шеф-повара
+											</p>
+											<div class="p-recipes__bottom">
+												<a href="#" class="p-news__detal">
+													Читать новость
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="footer__top">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 align-self-end">
+						<div class="p-neededhelp__left">
+							<h3 class="p-neededhelp__title">
+								Подпишитесь на новости
+							</h3>
+							<p class="p-neededhelp__description">
+								Каждую неделю мы публикуем новые рецепты, акции.  Не пропустите обновления, будет вкусно!
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-7 align-self-end">
+						<div class="p-neededhelp__right">
+							<form action="">
+								<div class="p-neededhelp__form">
+									<input type="text" class="p-neededhelp__input" placeholder="Ваш E-mail">
+									<input type="submit" class="p-neededhelp__button" value="Подписаться">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__center">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-9">
+						<div class="footer__f-col">
+							<div class="footer__f-nav">
+								<div class="f-nav__title">
+									Товары
+								</div>
+								<ul class="f-nav__list">
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Специи
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Смеси специй
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Ингридиенты
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Молотые специи
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Овощи и травы
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Декоративные посыпки
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer__f-col">
+							<div class="footer__f-nav">
+								<div class="f-nav__title">
+									Для бизнеса
+								</div>
+								<ul class="f-nav__list">
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Для кондитерских
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Хорека
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Для ресторанов
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Для розницы
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Для консервации
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Для производства
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer__f-col">
+							<div class="footer__f-nav">
+								<div class="f-nav__title">
+									Информация
+								</div>
+								<ul class="f-nav__list">
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Рецепты
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Новости
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											О компании
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Доставка и оплата
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Гарантии
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Контакты
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer__f-col">
+							<div class="footer__f-nav">
+								<div class="f-nav__title">
+									Личный кабинет
+								</div>
+								<ul class="f-nav__list">
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Личные данные
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											История заказов
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Избранное
+										</a>
+									</li>
+									<li class="f-nav__item">
+										<a href="#" class="f-nav__link">
+											Подписки
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="footer__f-contacts">
+							<div class="f-contacts">
+								<div class="f-contacts__phone">
+									+38 (067) 432-33-37
+									<div class="f-contacts__email visible-xs">info@piperukraine.com.ua</div>
+								</div>
+								<div class="f-contacts__email hidden-xs">
+									info@piperukraine.com.ua
+								</div>
+								<ul class="f-contacts__social">
+									<li class="f-contacts__item">
+										<a href="#" class="f-contacts__link">
+											<svg xmlns="http://www.w3.org/2000/svg" width="12" height="24" fill="none" viewBox="0 0 12 24"><path fill="#1C1C1C" d="M0 7.933h2.57V5.53c0-1.064.029-2.699.826-3.715C4.243.732 5.404 0 7.393 0 10.632 0 12 .447 12 .447l-.64 3.677s-1.073-.295-2.067-.295c-1.004 0-1.9.342-1.9 1.311v2.793h4.095l-.285 3.592h-3.81V24H2.569V11.525H0V7.933z"/></svg>
+										</a>
+									</li>
+									<li class="f-contacts__item">
+										<a href="#" class="f-contacts__link">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="#1C1C1C" fill-rule="evenodd" d="M3.08 0h17.84A3.084 3.084 0 0 1 24 3.08v17.84A3.084 3.084 0 0 1 20.92 24H3.08A3.084 3.084 0 0 1 0 20.92V3.08A3.084 3.084 0 0 1 3.08 0zm14.402 2.669a1.09 1.09 0 0 0-1.085 1.085v2.59c0 .594.49 1.084 1.085 1.084h2.712a1.09 1.09 0 0 0 1.085-1.085v-2.59a1.09 1.09 0 0 0-1.085-1.084h-2.712zm3.806 7.48H19.17c.201.657.306 1.348.306 2.057 0 3.99-3.342 7.227-7.463 7.227-4.12 0-7.463-3.238-7.463-7.227 0-.718.105-1.41.306-2.056H2.651v10.14c0 .525.429.954.954.954h16.72a.956.956 0 0 0 .954-.954V10.15h.009zm-9.266-2.87c-2.66 0-4.821 2.092-4.821 4.673s2.161 4.672 4.82 4.672c2.66 0 4.822-2.091 4.822-4.672 0-2.581-2.152-4.672-4.821-4.672z" clip-rule="evenodd"/></svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="footer__f-copy">
+							<p class="f-copy">
+								Copyright Piper Ukraine, 2017-2018. All right reserved<br />Договор публичной оферты
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- scripts -->
+	<script type="text/javascript" src="libs/jquery/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="libs/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="libs/owl-carousel2/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<!-- end_scripts -->
+</body>
+</html>
