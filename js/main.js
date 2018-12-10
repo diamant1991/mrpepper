@@ -12,7 +12,15 @@ $(function() {
 
 	/* Мобильное меню */
 	$('.h-buttons__link-menu').on('click', function() {
-		$(this).addClass('active');
+		var drop = $('#h-mobmenu');
+		if (drop.is(':hidden')) {
+			$(this).addClass('active');
+			drop.show();
+		} else {
+			$(this).removeClass('active');
+			drop.hide()
+		}
+		// $(this).addClass('active');
 		return false;
 	});
 
