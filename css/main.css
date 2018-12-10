@@ -154,6 +154,10 @@ body {
   overflow-x: hidden;
 }
 
+.page--inner {
+  background: #f7f7f7 url(../img/inner-bg.png) no-repeat right top;
+}
+
 .page__p-indexbanner {
   margin-bottom: -30px;
 }
@@ -568,11 +572,20 @@ body {
   background-repeat: no-repeat;
   background-position: right bottom;
 }
+.page__p-questions {
+  margin-bottom: 31px;
+}
+
+.p-questions--small {
+  height: 211px;
+  background-position: 100% 50%;
+}
 
 .p-questions__title {
   display: block;
   padding-top: 20px;
   position: relative;
+  max-width: 195px;
   color: #1c1c1c;
   font-size: 24px;
   font-weight: bold;
@@ -1239,4 +1252,32 @@ body {
   font-weight: 500;
 }
 
+.page--inner {
+  padding: 32px 65px;
+}
+
+.breadcrumb li {
+  font-family: "Lato";
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.44;
+  color: #a4a4a4;
+}
+.breadcrumb a{
+  color: #db3333;
+  text-decoration: none;
+}
+.breadcrumb__delimiter {
+  margin: 0 3px;
+}
+
+.page-title {
+  font-family: "Oswald";
+  font-size: 48px;
+  font-weight: 500;
+  color: #1c1c1c;
+  margin-bottom: 47px;
+}
 /**/
